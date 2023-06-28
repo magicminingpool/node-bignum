@@ -1,0 +1,33 @@
+{
+  "name": "bignum",
+  "version": "0.0.1",
+  "description": "Arbitrary-precision integer arithmetic using OpenSSL",
+  "main": "./index.js",
+  "repository": {
+    "type": "git",
+    "url": "http://github.com/magicminingpool/node-bignum.git"
+  },
+  "keywords": [
+    "openssl",
+    "big",
+    "bignum",
+    "bigint",
+    "integer",
+    "arithmetic",
+    "precision"
+  ],
+  "dependencies": {
+    "bindings": "^1.5.0",
+    "nan": "^2.14.0",
+    "safe-buffer": "^5.2.0"
+  },
+  "devDependencies": {
+    "put": "0.0.6",
+    "standard": "^14.3.1",
+    "tap": "^14.10.5"
+  },
+  "scripts": {
+    "install": "node-gyp rebuild",
+    "test": "standard && tap --timeout 120 test/*.js"
+  }
+}
