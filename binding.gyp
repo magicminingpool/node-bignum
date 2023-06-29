@@ -18,7 +18,7 @@
               [
                 'target_arch=="x64"', {
                   'variables': {
-                    'openssl_root%': 'C:/OpenSSL-Win64'
+                    'openssl_root%': 'C:/OpenSSL'
                   },
                 }, {
                    'variables': {
@@ -28,7 +28,7 @@
               ]
             ],
             'libraries': [ 
-              '-l<(openssl_root)/lib/libeay32.lib',
+              '-l<(openssl_root)/lib/libcrypto.lib',
             ],
             'include_dirs': [
               '<(openssl_root)/include',
